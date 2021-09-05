@@ -7,10 +7,33 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <title>Dischi</title>
 </head>
 
 <body>
+    <div id="app">
+        <header>
+            <div class="container">
+                <img class="logo" src="./img/download.png" alt="">
+            </div>
+
+        </header>
+
+        <main class="container">
+            <section>
+                <div class="card" v-for="album in albums">
+
+                    <img class="cover" :src="album.poster" :alt="album.title">
+                    <h2>{{ album.title }}</h2>
+                    <address> {{ album.author }}</address>
+                    <time :datetime="album.year"> {{ album.year }}</time>
+
+                </div>
+            </section>
+        </main>
+
+    </div>
     <script src="./js/script.js"></script>
 </body>
 

@@ -11,4 +11,37 @@
   
   body {
     font-family: sans-serif;
+    background-color: darkslategray;
   }
+
+header{
+  background-color: rgb(14, 15, 15);
+  height: 80px;
+}
+.logo{
+  height: 80px;
+}
+.cover{
+height: 150px;
+
+
+}
+
+main{
+  background-color: darkslategray;
+  height: calc(100vh - 80px);
+}
+
+section{
+  display: flex;
+flex-wrap: wrap;  
+justify-content: center;
+}
+
+.card{
+  
+  width: 200px;
+text-align: center;
+padding: 5px;
+}
+
